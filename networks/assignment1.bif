@@ -1,0 +1,83 @@
+network "unnamedBN" {
+// written by aGrUM 1.14.1
+}
+
+variable Physical_activity {
+   type discrete[3] {None, Little, Regular};
+}
+
+variable Obese {
+   type discrete[3] {No, Moderate, Severe};
+}
+
+variable Diet {
+   type discrete[3] {Unhealthy, Normal, Healthy};
+}
+
+variable Breast_cancer {
+   type discrete[2] {Yes, No};
+}
+
+variable BRCA1_mutation {
+   type discrete[2] {Yes, No};
+}
+
+variable BRCA1_mother {
+   type discrete[2] {Yes, No};
+}
+
+variable BRCA1_father {
+   type discrete[2] {Yes, No};
+}
+
+variable Menopause {
+   type discrete[2] {Before, After};
+}
+
+probability (Physical_activity) {
+   table 0.45 0.17 0.38;
+}
+probability (Obese | Physical_activity, Diet) {
+   (None, Unhealthy) 0.05 0.3 0.65;
+   (Little, Unhealthy) 0.15 0.25 0.5;
+   (Regular, Unhealthy) 0.4 0.35 0.25;
+   (None, Normal) 0.5 0.3 0.2;
+   (Little, Normal) 0.7 0.2 0.1;
+   (Regular, Normal) 0.8 0.15 0.05;
+   (None, Healthy) 0.7 0.2 0.1;
+   (Little, Healthy) 0.8 0.15 0.05;
+   (Regular, Healthy) 0.9 0.09 0.01;
+}
+probability (Diet) {
+   table 0.329 0.546 0.125;
+}
+probability (Breast_cancer | Obese, BRCA1_mutation, Menopause) {
+   (No, Yes, Before) 0.38 0.62;
+   (Moderate, Yes, Before) 0.72 0.28;
+   (Severe, Yes, Before) 0.83 0.17;
+   (No, No, Before) 0.04 0.96;
+   (Moderate, No, Before) 0.02 0.98;
+   (Severe, No, Before) 0.01 0.99;
+   (No, Yes, After) 0.55 0.45;
+   (Moderate, Yes, After) 0.82 0.18;
+   (Severe, Yes, After) 0.92 0.09;
+   (No, No, After) 0.22 0.78;
+   (Moderate, No, After) 0.45 0.55;
+   (Severe, No, After) 0.65 0.35;
+}
+probability (BRCA1_mutation | BRCA1_mother, BRCA1_father) {
+   (Yes, Yes) 1 0;
+   (No, Yes) 0.5 0.5;
+   (Yes, No) 0.5 0.5;
+   (No, No) 0.01 0.99;
+}
+probability (BRCA1_mother) {
+   table 0.0025 0.9975;
+}
+probability (BRCA1_father) {
+   table 0.0025 0.9975;
+}
+probability (Menopause) {
+   table 0.6 0.4;
+}
+
