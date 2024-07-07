@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.20)  7 JUL 2024 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.20)  7 JUL 2024 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Repositories/OpenUniversiteit/BRAL/Assignment2/paper/paper.tex
-(c:/Repositories/OpenUniversiteit/BRAL/Assignment2/paper/paper.tex
+**c:/Repositories/OpenUniversiteit/BRAL/BRAL_Assignment2/paper/paper.tex
+(c:/Repositories/OpenUniversiteit/BRAL/BRAL_Assignment2/paper/paper.tex
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -269,85 +269,110 @@ Package pdftex.def Info: ../figures/Breast_cancer_network_topology.png  used on 
 
 
 [2 <../figures/getBNDiff_example.png>]
-Overfull \hbox (4.53613pt too wide) in paragraph at lines 64--64
+Overfull \hbox (4.53613pt too wide) in paragraph at lines 65--65
 []\OT1/cmr/bx/n/12 Investigating the ef-fect of sam-ple size on learn-ing struc-
  []
 
 
 
 [3 <../figures/Breast_cancer_network_topology.png>]
-Overfull \hbox (4.53613pt too wide) in paragraph at lines 80--80
-[]\OT1/cmr/bx/n/12 Investigating the ef-fect of sam-ple size on learn-ing struc-
- []
-
-<../figures/greedy_hill_100.png, id=82, 1088.56688pt x 352.31625pt>
-File: ../figures/greedy_hill_100.png Graphic file (type png)
-<use ../figures/greedy_hill_100.png>
-Package pdftex.def Info: ../figures/greedy_hill_100.png  used on input line 116.
-(pdftex.def)             Requested size: 345.0pt x 111.65756pt.
-<../figures/greedy_hill_500.png, id=83, 1091.57813pt x 354.57469pt>
-File: ../figures/greedy_hill_500.png Graphic file (type png)
-<use ../figures/greedy_hill_500.png>
-Package pdftex.def Info: ../figures/greedy_hill_500.png  used on input line 122.
-(pdftex.def)             Requested size: 345.0pt x 112.06493pt.
+<../figures/Breast_cancer_learned_diff.png, id=84, 1086.30844pt x 604.50844pt>
+File: ../figures/Breast_cancer_learned_diff.png Graphic file (type png)
+<use ../figures/Breast_cancer_learned_diff.png>
+Package pdftex.def Info: ../figures/Breast_cancer_learned_diff.png  used on input line 83.
+(pdftex.def)             Requested size: 345.0pt x 191.98924pt.
 
 
 [4]
-<../figures/greedy_hill_1000.png, id=88, 1099.10625pt x 357.58594pt>
+<../figures/roc_original.png, id=90, 591.71063pt x 467.49657pt>
+File: ../figures/roc_original.png Graphic file (type png)
+<use ../figures/roc_original.png>
+Package pdftex.def Info: ../figures/roc_original.png  used on input line 95.
+(pdftex.def)             Requested size: 103.50105pt x 81.77032pt.
+<../figures/roc_learned.png, id=91, 587.19376pt x 470.50781pt>
+File: ../figures/roc_learned.png Graphic file (type png)
+<use ../figures/roc_learned.png>
+Package pdftex.def Info: ../figures/roc_learned.png  used on input line 102.
+(pdftex.def)             Requested size: 103.50105pt x 82.9288pt.
+<../figures/roc_steered.png, id=92, 587.94656pt x 466.74374pt>
+File: ../figures/roc_steered.png Graphic file (type png)
+<use ../figures/roc_steered.png>
+Package pdftex.def Info: ../figures/roc_steered.png  used on input line 109.
+(pdftex.def)             Requested size: 103.50105pt x 82.16566pt.
+
+Overfull \hbox (4.53613pt too wide) in paragraph at lines 118--118
+[]\OT1/cmr/bx/n/12 Investigating the ef-fect of sam-ple size on learn-ing struc-
+ []
+
+
+
+[5 <../figures/Breast_cancer_learned_diff.png> <../figures/roc_original.png> <../figures/roc_learned.png> <../figures/roc_steered.png>]
+<../figures/greedy_hill_100.png, id=104, 1088.56688pt x 352.31625pt>
+File: ../figures/greedy_hill_100.png Graphic file (type png)
+<use ../figures/greedy_hill_100.png>
+Package pdftex.def Info: ../figures/greedy_hill_100.png  used on input line 156.
+(pdftex.def)             Requested size: 345.0pt x 111.65756pt.
+<../figures/greedy_hill_500.png, id=105, 1091.57813pt x 354.57469pt>
+File: ../figures/greedy_hill_500.png Graphic file (type png)
+<use ../figures/greedy_hill_500.png>
+Package pdftex.def Info: ../figures/greedy_hill_500.png  used on input line 162.
+(pdftex.def)             Requested size: 345.0pt x 112.06493pt.
+<../figures/greedy_hill_1000.png, id=106, 1099.10625pt x 357.58594pt>
 File: ../figures/greedy_hill_1000.png Graphic file (type png)
 <use ../figures/greedy_hill_1000.png>
-Package pdftex.def Info: ../figures/greedy_hill_1000.png  used on input line 128.
+Package pdftex.def Info: ../figures/greedy_hill_1000.png  used on input line 168.
 (pdftex.def)             Requested size: 345.0pt x 112.24185pt.
-<../figures/greedy_hill_5000.png, id=89, 1095.3422pt x 359.84438pt>
+
+
+[6 <../figures/greedy_hill_100.png>]
+<../figures/greedy_hill_5000.png, id=113, 1095.3422pt x 359.84438pt>
 File: ../figures/greedy_hill_5000.png Graphic file (type png)
 <use ../figures/greedy_hill_5000.png>
-Package pdftex.def Info: ../figures/greedy_hill_5000.png  used on input line 134.
+Package pdftex.def Info: ../figures/greedy_hill_5000.png  used on input line 174.
 (pdftex.def)             Requested size: 345.0pt x 113.34059pt.
-<../figures/greedy_hill_10000.png, id=90, 1093.08376pt x 362.85562pt>
+<../figures/greedy_hill_10000.png, id=114, 1093.08376pt x 362.85562pt>
 File: ../figures/greedy_hill_10000.png Graphic file (type png)
 <use ../figures/greedy_hill_10000.png>
-Package pdftex.def Info: ../figures/greedy_hill_10000.png  used on input line 140.
+Package pdftex.def Info: ../figures/greedy_hill_10000.png  used on input line 180.
 (pdftex.def)             Requested size: 345.0pt x 114.52159pt.
-
-
-[5 <../figures/greedy_hill_100.png> <../figures/greedy_hill_500.png> <../figures/greedy_hill_1000.png>]
-<../figures/MIIC_100.png, id=101, 1097.60063pt x 355.3275pt>
+<../figures/MIIC_100.png, id=115, 1097.60063pt x 355.3275pt>
 File: ../figures/MIIC_100.png Graphic file (type png)
 <use ../figures/MIIC_100.png>
-Package pdftex.def Info: ../figures/MIIC_100.png  used on input line 146.
+Package pdftex.def Info: ../figures/MIIC_100.png  used on input line 186.
 (pdftex.def)             Requested size: 345.0pt x 111.68475pt.
-<../figures/MIIC_500.png, id=102, 1088.56688pt x 357.58594pt>
+
+
+[7 <../figures/greedy_hill_500.png> <../figures/greedy_hill_1000.png> <../figures/greedy_hill_5000.png>]
+<../figures/MIIC_500.png, id=127, 1088.56688pt x 357.58594pt>
 File: ../figures/MIIC_500.png Graphic file (type png)
 <use ../figures/MIIC_500.png>
-Package pdftex.def Info: ../figures/MIIC_500.png  used on input line 152.
+Package pdftex.def Info: ../figures/MIIC_500.png  used on input line 192.
 (pdftex.def)             Requested size: 345.0pt x 113.32765pt.
-<../figures/MIIC_1000.png, id=103, 1098.35344pt x 355.3275pt>
+<../figures/MIIC_1000.png, id=128, 1098.35344pt x 355.3275pt>
 File: ../figures/MIIC_1000.png Graphic file (type png)
 <use ../figures/MIIC_1000.png>
-Package pdftex.def Info: ../figures/MIIC_1000.png  used on input line 158.
+Package pdftex.def Info: ../figures/MIIC_1000.png  used on input line 198.
 (pdftex.def)             Requested size: 345.0pt x 111.60886pt.
-
-
-[6 <../figures/greedy_hill_5000.png> <../figures/greedy_hill_10000.png> <../figures/MIIC_100.png>]
-<../figures/MIIC_5000.png, id=114, 1094.58937pt x 355.3275pt>
+<../figures/MIIC_5000.png, id=129, 1094.58937pt x 355.3275pt>
 File: ../figures/MIIC_5000.png Graphic file (type png)
 <use ../figures/MIIC_5000.png>
-Package pdftex.def Info: ../figures/MIIC_5000.png  used on input line 164.
+Package pdftex.def Info: ../figures/MIIC_5000.png  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 111.9938pt.
-<../figures/MIIC_10000.png, id=115, 1096.095pt x 355.3275pt>
+
+
+[8 <../figures/greedy_hill_10000.png> <../figures/MIIC_100.png> <../figures/MIIC_500.png>]
+<../figures/MIIC_10000.png, id=140, 1096.095pt x 355.3275pt>
 File: ../figures/MIIC_10000.png Graphic file (type png)
 <use ../figures/MIIC_10000.png>
-Package pdftex.def Info: ../figures/MIIC_10000.png  used on input line 170.
+Package pdftex.def Info: ../figures/MIIC_10000.png  used on input line 210.
 (pdftex.def)             Requested size: 345.0pt x 111.842pt.
-
-
-[7 <../figures/MIIC_500.png> <../figures/MIIC_1000.png> <../figures/MIIC_5000.png>] (./paper.bbl
+ (./paper.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 
-[8 <../figures/MIIC_10000.png>] (./paper.aux)
+[9 <../figures/MIIC_1000.png> <../figures/MIIC_5000.png> <../figures/MIIC_10000.png>] (./paper.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
@@ -356,18 +381,18 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 6729177F46A057CFA7AE06336FB2DA50;2281.
  ) 
 Here is how much of TeX's memory you used:
- 10080 strings out of 473599
- 163423 string characters out of 5732716
+ 10133 strings out of 473599
+ 164894 string characters out of 5732716
  1935908 words of memory out of 5000000
- 32840 multiletter control sequences out of 15000+600000
- 562362 words of font info for 50 fonts, out of 8000000 for 9000
+ 32888 multiletter control sequences out of 15000+600000
+ 562829 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,487b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper.pdf (8 pages, 872693 bytes).
+ 75i,8n,79p,515b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (9 pages, 1137221 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

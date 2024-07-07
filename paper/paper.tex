@@ -61,6 +61,7 @@ Finally, we will explore whether incorporating structural constraints can steer 
 This will be done by adding mandatory arcs to the learning algorithm, which will force the algorithm to include these arcs in the learned network.
 
 \section{Results}
+The code for the experiments can be found on the following GitHub repository: \url{https://github.com/JoachimVerscheldePersonal/BRAL_Assignment2}.
 \subsection{Investigating the effect of sample size on learning structure}
 The visualizations of the differences between the learned networks and the original network can be found in appendix \ref{appendix:raw}.
 After 100 samples both the MIIC and the GHC algorithms have a hard time learning the original network structure, 
@@ -74,7 +75,44 @@ It takes 10000 samples for the GHC algorithm to have all 7 arcs in the correct p
 There is little improvement when using more than 1000 samples for the MIIC algorithm, when we reach 5000 samples, only one extra arc is in the correct causal direction, and 10000 samples does not improve this further.
 \subsection{Learning a classifier}
 % What are your findings?
+We split the dataset into a training and a test set, with a 80/20 ratio. The GHC algorithm was used to learn the network structure from 16000 training samples.
+The Hamming distance between the learned network and the benchmark network was two, which means that two edges differed between the two networks.
+If we visualize these differences we can indeed see that there two edges too many in the learned network, being the edge between \textit{BC} and \textit{FibrTussueDev} and the edge between \textit{Mass} and \textit{Spiculation}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/Breast_cancer_learned_diff.png}
+    \caption{The difference between the learned network and the benchmark network}
+    \label{fig:network_diff}
+\end{figure}
+The performance difference between the learned network and the benchmark network on the test set was minimal, with an AUC of 0.9848 for the benchmark network and 0.9845 for the learned network.
+This could indicates that the learned network generalizes well to unseen data. We could try to improve the learned model by introducing structural constraints.
+We can derive from the learned model visualizations that we could correct the arc from \textit{Location} to \textit{BC}.
+If we then look at figure \ref{fig:subfig3} we can see that the area under the curve is has improved to the same as the benchmark network.
 
+\begin{figure}[H]
+\begin{subfigure}{0.3\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{../figures/roc_original.png}
+    \caption{Benchmark network}
+    \label{fig:subfig1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.3\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{../figures/roc_learned.png}
+    \caption{Learned network}
+    \label{fig:subfig2}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.3\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{../figures/roc_steered.png}
+    \caption{Learned network with structural constraints}
+    \label{fig:subfig3}
+\end{subfigure}
+\caption{ROC curves for performance comparison}
+\label{fig:horizontal_figures}
+\end{figure}
 \section{Conclusions and discussion}
 % Your conclusions and some reflection on the results. Eg. If you observe unexpected results, can you think of an explanation?
 \subsection{Investigating the effect of sample size on learning structure}
@@ -82,7 +120,9 @@ The GHC algorithm performed better than the MIIC algorithm when using small samp
 This is also reflected in the fact that the MIIC algorithm did not introduce any faulty arcs, while the GHC algorithm did. The GHC algorithm is not dependant on these statistical tests, and only tries to maximize a scoring function.
 This is more of a greedy approach and could explain why the GHC algorithm performed better with small sample sizes. Using sample sizes of $1000$ and up, the MIIC algorithm had the best performance by far.
 \subsection{Learning a classifier}
-
+We divided the dataset into training and test sets in an 80/20 ratio, using 16,000 samples for training.
+The Greedy Hill Climbing (GHC) algorithm was employed to learn the network structure. The Hamming distance between the learned network and the benchmark network was two, indicating two differing edges. Visual inspection confirmed these differences, specifically the edges between \textit{BC} and \textit{FibrTussueDev}, and between \textit{Mass} and \textit{Spiculation}.
+Despite these structural differences, the performance of the learned network on the test set was nearly identical to the benchmark network, with AUC values of 0.9845 and 0.9848. This suggests that the learned network generalizes well to unseen data. Introducing structural constraints, such as correcting the arc from \textit{Location} to \textit{BC}, improved the model's performance to match that of the benchmark network.
 
 
 
